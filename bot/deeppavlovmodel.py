@@ -1,0 +1,1 @@
+python -m deeppavlov riseapi squad_ru_bert_infer -p 5005

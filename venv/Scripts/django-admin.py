@@ -1,4 +1,4 @@
-#!F:\git\chatbot\venv\Scripts\python.exe
+#!f:\git\chatbot\venv\scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

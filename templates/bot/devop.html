@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Форма</title>
+  <script src="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHVuTUdtV2lkdkdMcTNyOHlvbTA1MEQ1WWNiQXxBQ3Jtc0tuQTBuOGUwMl81OUdPeVJtR1o0LUQ3UEszR3JGOE1ZWFUtRHhwSGg2ZTVMWHViRUZVZjAyc2lrM3d1WFZiNkV1Wl9fNmU2eDNKX3BwazFOZXAtd043M3NoWXh4OUdlQWxzSHhzdmN6VVJGZlRDMG9XUQ&q=http%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fjquery%2F2.0.3%2Fjquery.min.js"></script>
+ </head>
+ <body>
+  <form id="auth" action="" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <div id="test" onclick="$('#test').hide ()">ТАФАЙ СПРАШИВАЙ</div>
+  <p><input name="question" form="auth">
+  <p><input type="submit" form="auth"></p>
+  <b>{{ question }}</b>
+      <br>
+  <b>{{ content }}</b>
+  </form>
+ </body>
+</html>

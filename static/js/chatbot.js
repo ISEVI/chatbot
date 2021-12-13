@@ -394,7 +394,19 @@ SimpleChatbot.createTemplate = function() {
   }
   const $fragment = document.createElement('div');
   $fragment.className = 'chatbot chatbot_hidden';
-  $fragment.innerHTML = '<div class="chatbot__title"><span class="chatbot__close"></span>Служба поддержки ИСОД<span class="chatbot__reset"></span></div><div class="chatbot__wrapper"><div class="chatbot__items"></div></div><div class="chatbot__footer"><input class="chatbot__input" type="text" disabled><button class="chatbot__submit" type="button" disabled></button></div>';
+  $fragment.innerHTML =
+      '<div class="chatbot__title">' +
+        '<span class="chatbot__close"></span>' +
+          'Служба поддержки ИСОД' +
+        '<span class="chatbot__reset"></span>' +
+      '</div>' +
+      '<div class="chatbot__wrapper">' +
+      '<div class="chatbot__items"></div>' +
+      '</div>' +
+      '<div class="chatbot__footer">' +
+      '<input class="chatbot__input" type="text" disabled>' +
+      '<button class="chatbot__submit" type="button" disabled></button>' +
+      '</div>';
   document.body.appendChild($fragment);
   return document.querySelector('.chatbot');
 };
